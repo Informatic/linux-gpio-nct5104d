@@ -145,7 +145,13 @@ static void nct5104d_gpio_set(struct gpio_chip *chip, unsigned offset, int value
 
 static struct nct5104d_gpio_bank nct5104d_gpio_bank[] = {
 	NCT5104D_GPIO_BANK("0", 0 , 8, 0xE0),
-	NCT5104D_GPIO_BANK("1", 10, 8, 0xE4)
+	NCT5104D_GPIO_BANK("1", 10, 8, 0xE4),
+	NCT5104D_GPIO_BANK("2", 20, 8, 0xE8),
+	NCT5104D_GPIO_BANK("3", 30, 8, 0xEC),
+	NCT5104D_GPIO_BANK("4", 40, 8, 0xF0),
+	NCT5104D_GPIO_BANK("5", 50, 8, 0xF4),
+	NCT5104D_GPIO_BANK("6", 60, 8, 0xF8),
+	NCT5104D_GPIO_BANK("7", 70, 8, 0xFC),
 };
 
 static int nct5104d_gpio_direction_in(struct gpio_chip *chip, unsigned offset)
